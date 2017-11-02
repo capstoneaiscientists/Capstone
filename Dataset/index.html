@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>World of Warcraft Avatar History Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<style type="text/css">
+body {
+	background-color: #CCC;	
+	font-family: Trebuchet MS, Geneva, Tahoma, Georgia, Times New Roman, Arial;
+}
+
+p {
+ text-align:left; color:#000;
+}
+
+A {
+	font-style:normal;
+	text-decoration:underline;
+	color:#004499;
+}
+
+.section {
+	font-size: 18px;
+	font-weight: bold;
+	text-align:left;
+	color:#000
+}
+
+.tstyle3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align:left;
+	color:#000
+}
+
+.tstyle2 {
+ font-weight: bold;
+ text-align:left; color:#000}
+
+.style1 {
+ text-align:left; color:#000}
+</style>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0" id="___01">
+	<tr>
+		<td width="900" height="342" valign="top"><img src="img/index_01.jpg" alt="" width="900" height="342" border="0"></td>
+	</tr>
+
+	<tr>
+	  <td bgcolor="#FFFFFF"><p>&nbsp;</p>
+	    <table width="90%" border="0" align="center">
+
+		    <tr>
+		      <td width="2%" valign="middle"><img src="img/icons.jpg" width="13" height="14"></td>
+		      <td width="98%"><span class="section">Overview</span></td>
+	      </tr>
+
+		    <tr valign="top">
+		      <td>&nbsp;</td>
+		      <td><p>
+		      
+From the perspective of game system designers, players' behavior
+is one of the most important factors they must consider
+when designing game systems. To gain a fundamental
+understanding of the game play behavior of online gamers,
+exploring users' game play time provides a good starting
+point. This is because the concept of game play time is applicable to all genres of games and it enables us to model the
+system workload as well as the impact of system and network
+QoS on users' behavior. It can even help us predict players'
+loyalty to specific games. </p>
+
+<p>We present the World ofWarcraft Avatar History (WoWAH) dataset, which
+comprises the records of 91,065 avatars. The data includes
+the avatars' game play times and a number of attributes,
+such as their race, profession, current level, and in-game locations, during a 1,107-day period between Jan. 2006 and
+Jan. 2009.
+		      </td>
+	      </tr>
+	      
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+
+<!-- Description Section Begin -->
+		    <tr>
+		      <td valign="middle"><img src="img/icons.jpg" width="13" height="14"></td>
+		      <td><span class="section">Trace Description</span></td>
+          </tr>
+
+		    <tr valign="top">
+		      <td></td>
+		      
+		      <td>
+		      
+		      We collected the data over 1,107 days between Jan. 2006
+and Jan. 2009. During the monitored period, 91,065 avatars,
+and 667,032 sessions associated with the avatars were observed.
+Because the sampling interval was 10 minutes, there
+should have been 159,408 samples, each providing the status
+of all the avatars online during the sampling period. To protect players' privacy,
+we mapped the avatars' names and guild names randomly as
+positive integers with a consistent mapping (i.e., the same
+names were always mapped to the same integers). A summary
+of the dataset is presented in Table 1.
+
+<p><center><img src="img/tbl_summary.jpg" alt="Trace Summary" width="50%"/></center></p>
+
+
+A log file is composed of two arrays: <i>Persistant_Storage</i>
+and <i>RoundInfo</i>. All the information collected about the
+avatars' history is stored in the <i>Persistant_Storage</i> array.
+Each element stores the information about an avatar observed
+during the sampling period; thus, the number of elements
+is equal to the number of avatars online in that sampling
+interval. An element is a string that contains <b>11</b> fields
+separated by commas. The 11 fields are <i><b>dummy, query time,
+query sequence number, avatar ID, guild, level, race,
+class, zone, dummy, dummy</b></i>. The meanings and valid values
+of the fields are detailed in Table 2. We also provide three
+sample records in Table 3. The first record, which relates
+to the initial query, indicates that we observed an avatar
+with ID 467 at 23:59:39 on 01/01/2006, and the avatar was
+a level-1 non-guilded Orc Warrior in Orgrimmar.
+
+
+<p><center><img src="img/tbl_fields.jpg" alt="Field Explanations" width="50%"/></center></p>
+
+<p><center><img src="img/tbl_example.jpg" alt="Example Records" width="90%"/></center></p>
+
+
+          </td></tr>
+
+<!-- Description Section End -->
+
+<!-- Download Section Begin -->
+
+		    <tr>
+		      <td valign="middle"><img src="img/icons.jpg" width="13" height="14"></td>
+		      <td><span class="section">Download</span></td>
+          </tr>
+
+		    <tr valign="top">
+		      <td></td>
+		      
+		      <td>
+
+		      Direct Link: <a href="wowah.rar">World of Warcraft Avatar History</a> (RAR format, 577,334,422 bytes)</p></td>
+    </td></tr>
+
+<!-- Download Section End -->
+
+<!-- Reference Section Begin -->
+		    <tr>
+		      <td valign="middle"><img src="img/icons.jpg" width="13" height="14"></td>
+		      <td><span class="section">Reference</span></td>
+          </tr>
+
+		    <tr valign="top">
+		      <td>&nbsp;</td>
+		      <td>
+		      Yeng-Ting Lee, Kuan-Ta Chen, Yun-Maw Cheng, and Chin-Laung Lei, "<a href="http://mmnet.iis.sinica.edu.tw/publication_detail.html?key=lee11_wowah">World of Warcraft Avatar History Dataset</a>," In <i>Proceedings of ACM Multimedia Systems 2011</i>, Feb 2011.
+          </td>
+        </tr>
+
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+	
+<!-- Reference Section End -->
+
+<!-- Publications Section Begin -->
+
+		    <tr>
+		      <td valign="middle"><span class="section"><img src="img/icons.jpg" width="13" height="14"></span></td>
+		      <td><span class="section">Research Work using WOWAH</span></td>
+          </tr>
+
+
+		    <tr valign="top">
+		      <td>&nbsp;</td>
+		      <td>
+              <ol>
+
+<li>Kuan-Ta Chen, Hsing-Kuo Kenneth Pao, and Hong-Chung Chang, "<a href="http://mmnet.iis.sinica.edu.tw/publication_detail.html?key=chen08_manifold">Game Bot Identification based on Manifold Learning</a>," <i>Proceedings of ACM NetGames 2008</i>, 2008.</li>
+
+<li>Pin-Yun Tarng and Kuan-Ta Chen and Polly Huang, "<a href="http://mmnet.iis.sinica.edu.tw/publication_detail.html?key=tarng09_gamer_departure">On Prophesying Online Gamer Departure</a>," <i>Proceedings of ACM NetGames 2009 (poster)</i>, 2009.</li>
+
+<li>Yeng-Ting Lee and Kuan-Ta Chen, "<a href="http://mmnet.iis.sinica.edu.tw/publication_detail.html?key=lee10_consolidation">Is Server Consolidation Beneficial to MMORPG? A Case Study of World of Warcraft</a>," <i>Proceedings of IEEE CLOUD 2010</i>, 2010.</li>
+              </ol></td>
+          </tr>
+
+  
+<!-- Publications Section End -->
+
+		    <tr>
+		      <td valign="middle"><img src="img/icons.jpg" width="13" height="14"></td>
+		      <td><span class="section">Contact</span></td>
+          </tr>
+
+
+		    <tr valign="top">
+		      <td height="70"></td>
+		      <td><p class="style1">If you have any question and/or comments regarding WOWAH, or if you want to list your publications on this page, please feel free to contact <a href="http://www.iis.sinica.edu.tw/~swc/">Kuan-Ta Chen</a> at <a href="mailto:swc@iis.sinica.edu.tw">swc@iis.sinica.edu.tw</a>.</p></td>
+          </tr>
+
+
+      </table></td>
+	</tr>
+
+
+</table>
+</body>
+</html>
