@@ -1,0 +1,2 @@
+avatarid,no.ofdays,tenure,level_low,level_med,level_hi,race_Blood Elf,race_Orc,race_Tauren,race_Troll,race_Undead,class_Warrior,class_Hunter,class_Rogue,class_Paladin,class_DeathKnight,class_Shaman,class_Warlock,class_Druid,class_Mage,class_Priest,gametenure_ratio,churn
+12345,40,100,1,0,0,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0.75,1
