@@ -1,0 +1,9 @@
+1. group by avatar id
+2. count no. of occurences
+3. count tenure (last played day - first played day)
+4. create dummy variable for race, class, guild flag
+5. calculate no. of days played by total tenure ratio
+6. create a churn flag and mark as 1 if ratio is above a threshold else 0
+then remove columns mentioned in step 5 and 6 from train data
+7. predict using decision tree or random forest classifier
+ 
